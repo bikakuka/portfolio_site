@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords"
+    content="​Innovate Your Future, ​Transform Your Brand, What We Do​, ​Engage Your Audience, ​What We Can Do for Our Clients, Contact us">
+  <meta name="description" content="">
+  <title>Визиточка</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/nicepage.css') }}" media="screen">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/Page-2.css') }}" media="screen">
+  <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='js/jquery-1.9.1.min.js') }}"
+    defer=""></script>
+  <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='js/nicepage.js') }}"
+    defer=""></script>
+  <meta name="generator" content="Nicepage 7.2.0, nicepage.com">
+  <meta name="referrer" content="origin">
+
+
+
+
+
+
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+  <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "static/images/rRMtKXpcO7F9rlOb.webp"
+}</script>
+  <meta name="theme-color" content="#478ac9">
+  <meta property="og:title" content="Page 2">
+  <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/">
+
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(99301846, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/99301846" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+
+<body data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en">
+  <header class="u-clearfix u-header u-header" id="sec-7c42">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <a href="#" class="u-image u-logo u-image-1" data-image-width="800" data-image-height="596">
+        <img src="{{ url_for('static', filename='images/rRMtKXpcO7F9rlOb.webp') }}" class="u-logo-image u-logo-image-1">
+      </a>
+      <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+          <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-hamburger-link u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+            href="#">
+            <svg class="u-svg-link" viewBox="0 0 24 24">
+              <use xlink:href="#menu-hamburger"></use>
+            </svg>
+            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <rect y="1" width="16" height="2"></rect>
+                <rect y="7" width="16" height="2"></rect>
+                <rect y="13" width="16" height="2"></rect>
+              </g>
+            </svg>
+          </a>
+        </div>
+        {% if user %}
+        <h1>Добро пожаловать, {{ user.name }}!</h1>
+        <p>Ваш username: {{ user.username }}</p>
+        <img src="{{ user.avatar_url }}" alt="Аватар">
+        <br>
+        <p>Вы вошли через: {{ user.source }}</p>
+        <a href="{{ url_for('logout') }}">Выйти</a>
+    {% else %}
+        <h1>Добро пожаловать!</h1>
+        <p>Пожалуйста, войдите через Telegram или GitHub:</p>
+        <a href="{{ url_for('login_github') }}" class="u-btn u-button-style">Войти через GitHub</a>
+        <script async src="https://telegram.org/js/telegram-widget.js?7"
+                data-telegram-login="login_for_vizitka_bot"
+                data-size="large"
+                data-radius="10"
+                data-auth-url="https://bikakuka.pythonanywhere.com/auth"
+                data-request-access="write"></script>
+    {% endif %}
+
+        <script src="{{ url_for('static', filename='js/style.js') }}"></script>
+        <div class="u-custom-menu u-nav-container-collapse">
+          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div class="u-inner-container-layout u-sidenav-overflow">
+              <div class="u-menu-close"></div>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                <li class="u-nav-item"><a class="u-button-style u-nav-link">Войти</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="skrollable u-clearfix u-container-align-center u-image u-parallax u-shading u-section-1" id="sec-defb"
+    data-image-width="1280" data-image-height="960">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <div
+        class="u-align-center u-container-align-center u-container-style u-expanded-width u-group u-shape-rectangle u-group-1">
+        <div class="u-container-layout">
+          <h1 class="u-align-center u-text u-text-1">Визитка</h1>
+          <p class="u-align-center u-text u-text-2">Сайт сделан для получение зачета по практикуму на ЭВМ<br>Сделано
+            Наздрюхиным Матвеем <br>Умею то да сё:)<br>Я учусь на программного инженера на МатМехе СПБГУ👍👍👍
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="u-clearfix u-valign-bottom u-section-2" id="sec-e2ef">
+    <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+      <div class="u-layout">
+        <div class="u-layout-row">
+          <div
+            class="u-container-align-center-sm u-container-align-center-xs u-container-style u-image u-layout-cell u-size-29 u-image-1"
+            data-image-width="1646" data-image-height="1810">
+            <div class="u-container-layout u-container-layout-1">
+              <h4 class="u-align-center u-text u-text-white u-text-1">Мои, так называемые, <span
+                  style="font-weight: 700;">skills</span>
+              </h4>
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-layout-cell u-size-31 u-layout-cell-2">
+            <div class="u-container-layout u-container-layout-2">
+              <div class="u-clearfix u-group-elements u-group-elements-1">
+                <span class="u-align-center u-file-icon u-icon u-icon-1">
+                  <img src="{{ url_for('static', filename='images/Kotlin_Icon.png') }}" alt="">
+                </span>
+                <p class="u-text u-text-2">Kotlin </p>
+              </div>
+              <div class="u-clearfix u-group-elements u-group-elements-2">
+                <span class="u-align-center u-file-icon u-icon u-icon-2">
+                  <img src="{{ url_for('static', filename='images/ocaml_logo_icon_170902.png') }}" alt="">
+                </span>
+                <p class="u-text u-text-3">OCaml</p>
+              </div>
+              <div class="u-clearfix u-group-elements u-group-elements-3">
+                <span class="u-file-icon u-icon u-icon-3">
+                  <img src="{{ url_for('static', filename='images/110px_Python_logo_notext.svg.png') }}" alt="">
+                </span>
+                <p class="u-text u-text-4">Python3 </p>
+              </div>
+              <div class="u-clearfix u-group-elements u-group-elements-4">
+                <span class="u-align-center u-file-icon u-icon u-icon-4">
+                  <img src="{{ url_for('static', filename='images/images_1.png')}}" alt="">
+                </span>
+                <p class=" u-text u-text-5">C</p>
+              </div>
+              <div class="u-clearfix u-group-elements u-group-elements-5">
+                <span class="u-file-icon u-icon u-icon-5">
+                  <img src="{{ url_for('static', filename='images/ISO_C_Logo.svg.png')}}" alt="">
+                </span>
+                <p class="u-text u-text-6">C++ </p>
+              </div>
+              <div class="u-clearfix u-group-elements u-group-elements-6">
+                <span class="u-file-icon u-icon u-icon-6">
+                  <img src="{{ url_for('static', filename='images/imagsdfdsfes.png')}}" alt="">
+                </span>
+                <p class="u-text u-text-7">Godot </p>
+              </div>
+              <div class="u-clearfix u-group-elements u-group-elements-7">
+                <span class="u-icon u-icon-7">
+                  <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 256 346" style="">
+                    <use xlink:href="#svg-7655"></use>
+                  </svg>
+                  <svg class="u-svg-content" viewBox="0 0 256 346" id="svg-7655">
+                    <path
+                      d="M82.554 267.473s-13.198 7.675 9.393 10.272c27.369 3.122 41.356 2.675 71.517-3.034 0 0 7.93 4.972 19.003 9.279-67.611 28.977-153.019-1.679-99.913-16.517M74.292 229.659s-14.803 10.958 7.805 13.296c29.236 3.016 52.324 3.263 92.276-4.43 0 0 5.526 5.602 14.215 8.666-81.747 23.904-172.798 1.885-114.296-17.532"
+                      fill="#5382A1"></path>
+                    <path
+                      d="M143.942 165.515c16.66 19.18-4.377 36.44-4.377 36.44s42.301-21.837 22.874-49.183c-18.144-25.5-32.059-38.172 43.268-81.858 0 0-118.238 29.53-61.765 94.6"
+                      fill="#E76F00"></path>
+                    <path
+                      d="M233.364 295.442s9.767 8.047-10.757 14.273c-39.026 11.823-162.432 15.393-196.714.471-12.323-5.36 10.787-12.8 18.056-14.362 7.581-1.644 11.914-1.337 11.914-1.337-13.705-9.655-88.583 18.957-38.034 27.15 137.853 22.356 251.292-10.066 215.535-26.195M88.9 190.48s-62.771 14.91-22.228 20.323c17.118 2.292 51.243 1.774 83.03-.89 25.978-2.19 52.063-6.85 52.063-6.85s-9.16 3.923-15.787 8.448c-63.744 16.765-186.886 8.966-151.435-8.183 29.981-14.492 54.358-12.848 54.358-12.848M201.506 253.422c64.8-33.672 34.839-66.03 13.927-61.67-5.126 1.066-7.411 1.99-7.411 1.99s1.903-2.98 5.537-4.27c41.37-14.545 73.187 42.897-13.355 65.647 0 .001 1.003-.895 1.302-1.697"
+                      fill="#5382A1"></path>
+                    <path
+                      d="M162.439.371s35.887 35.9-34.037 91.101c-56.071 44.282-12.786 69.53-.023 98.377-32.73-29.53-56.75-55.526-40.635-79.72C111.395 74.612 176.918 57.393 162.439.37"
+                      fill="#E76F00"></path>
+                    <path
+                      d="M95.268 344.665c62.199 3.982 157.712-2.209 159.974-31.64 0 0-4.348 11.158-51.404 20.018-53.088 9.99-118.564 8.824-157.399 2.421.001 0 7.95 6.58 48.83 9.201"
+                      fill="#5382A1"></path>
+                  </svg>
+                </span>
+                <p class="u-text u-text-8">Java</p>
+              </div>
+              <div class="u-clearfix u-group-elements u-group-elements-8">
+                <span class="u-file-icon u-icon u-icon-8">
+                  <img src="{{ url_for('static', filename='images/bhjbbh.jpeg')}}" alt="">
+                </span>
+                <p class="u-text u-text-9">SQLite</p>
+              </div>
+              <p class="u-align-center u-text u-text-default u-text-grey-60 u-text-10">Картинки в стиле треш-авангард
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="u-clearfix u-valign-middle-lg u-section-3" id="carousel_db8c">
+    <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+      <div class="u-layout">
+        <div class="u-layout-row">
+          <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+            <div class="u-container-layout u-container-layout-1">
+              <div class="u-clearfix u-group-elements u-group-elements-1">
+                <img class="u-expanded-width u-image u-image-contain u-image-default u-preserve-proportions u-image-1"
+                  src="{{ url_for('static', filename='images/fe2a145217e00b8a34ee78aeba1b06bb-removebg-preview.png')}}"
+                  alt="" data-image-width="371" data-image-height="371"
+                  data-href="https://github.com/Why1in1lyceum1limit1na1razmer1fayla/flaskcasino.com"
+                  data-target="_blank">
+                <p class="u-align-center u-text u-text-default u-text-1">
+                  <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1"
+                    href="https://github.com/Why1in1lyceum1limit1na1razmer1fayla/flaskcasino.com" target="_blank">Flask
+                    Casino </a>
+                </p>
+              </div>
+              <div class="u-clearfix u-group-elements u-group-elements-2">
+                <img class="u-align-center u-image u-image-contain u-image-default u-image-2"
+                  src="{{ url_for('static', filename='images/logoBlack.png')}}" alt="" data-image-width="622"
+                  data-image-height="714">
+                <p class="u-text u-text-2">
+                  <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2"
+                    href="https://github.com/spbu-coding-2023/graphs-graphss-14" target="_blank">Graph visualizator<br>
+                  </a>
+                </p>
+              </div>
+              <div class="u-clearfix u-group-elements u-group-elements-3">
+                <img class="u-expanded-width u-image u-image-default u-image-3"
+                  src="{{ url_for('static', filename='images/final_map.png')}}" alt="" data-image-width="920"
+                  data-image-height="420"
+                  data-href="https://github.com/Why1in1lyceum1limit1na1razmer1fayla/PyQt5_game_copperman"
+                  data-target="_blank">
+                <p class="u-align-center u-text u-text-default u-text-3">
+                  <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3"
+                    href="https://github.com/Why1in1lyceum1limit1na1razmer1fayla/PyQt5_game_copperman"
+                    target="_blank">Copperman</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="u-container-align-center-sm u-container-align-center-xs u-container-style u-grey-5 u-layout-cell u-size-30 u-layout-cell-2"
+            data-image-width="712" data-image-height="897">
+            <div class="u-container-layout u-valign-middle u-container-layout-2">
+              <div class="u-clearfix u-expanded-width u-group-elements u-group-elements-4">
+                <h2 class="u-align-center u-text u-text-4">Мои проекты </h2>
+                <p class="u-align-center u-text u-text-default u-text-5">Все проекты, которые я делал с 2020
+                  года👍👍👍👍👍<br>можно посмотреть их все по <a
+                    href="https://github.com/Why1in1lyceum1limit1na1razmer1fayla">этой ссылке</a> и <a
+                    href="https://github.com/bikakuka">по этой</a><br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="u-clearfix u-section-4" id="sec-f7b2">
+    <div
+      class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
+      <img class="u-image u-image-default u-image-1"
+        src="{{ url_for('static', filename='images/photo_2024-12-23_21-45-18.jpg')}}" alt="" data-image-width="441"
+        data-image-height="523">
+      <div class="u-form u-form-1">
+        <form action="https://forms.nicepagesrv.com/v2/form/process"
+          class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form"
+          style="padding: 10px;">
+          <div class="u-form-group u-form-message">
+            <label for="message-2ef1" class="u-label">Отправить письмо мне на почту👍👍👍</label>
+            <textarea placeholder="​" rows="4" cols="50" id="message-2ef1" name="message"
+              class="u-input u-input-rectangle" required=""></textarea>
+          </div>
+          <div class="u-align-left u-form-group u-form-submit">
+            <a href="#" class="u-btn u-btn-submit u-button-style u-btn-1">Submit</a>
+            <input type="submit" value="submit" class="u-form-control-hidden">
+          </div>
+          <div class="u-form-send-message u-form-send-success"> Спасибо за сообщение :) </div>
+          <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try
+            again. </div>
+          <input type="hidden" value="" name="recaptchaResponse">
+          <input type="hidden" name="formServices" value="cb76a11e-b4a4-521a-174f-72e6697f8790">
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="u-backlink u-clearfix u-grey-80">
+    <p class="u-text">
+      <span>Соцсеть для связи - <a href="https://t.me/bikakuka"> @bikakuka</a> (tg) </span>
+    </p>
+  </section>
+
+</body>
+
+</html>
